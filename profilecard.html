@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    body {
+      background-color: #f2f4f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .profile-card {
+      background-color: white;
+      margin: 50px auto;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      background-color: #ccc;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .profile-info p {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      margin-right: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: royalblue;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: darkblue;
+    }
+
+  
+    @media (max-width: 700px) {
+      .profile-card {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-pic {
+        margin: 0 auto 15px;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="p">
+      <div class="profile-pic"><img src="profile blank.webp" alt="profile pic" height="120px" width="120px"></div>
+      <div class="profile-name">
+        <h2>Rahul Verma</h2>
+      </div>
+    </div>
+    <div class="profile-info">
+      <p>Web Designer & JavaScript Enthusiast. <br>
+        Loves clean, creative layouts and good coffee!</p>
+      <button class="btn">Contact</button>
+      <button class="btn">Portfolio</button>
+    </div>
+  </div>
+</body>
+</html>

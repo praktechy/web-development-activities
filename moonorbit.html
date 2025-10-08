@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Moon</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .earth {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .moon {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) translateX(150px); 
+      animation: orbit 6s linear infinite;
+    }
+
+    @keyframes orbit {
+      0%   { 
+        transform: translate(-50%, -50%) rotate(0deg) translateX(150px); 
+    }
+      100% { 
+        transform: translate(-50%, -50%) rotate(360deg) translateX(150px); 
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="earth">
+    <div class="moon"></div>
+  </div>
+</body>
+</html>
